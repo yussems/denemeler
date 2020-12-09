@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>single page app</title>
+</head>
+<body>
+<div class="container">
+     <h2>JavaScript hipotenüs Hesaplama</h2> 
+     <form>
+         <div class="form-group">
+             <label for="sayi1">Sayı 1:</label>
+             <input type="text" class="form-control" id="sayi1" placeholder="Bir Sayı Girin">
+         </div>
+         <div class="form-group">
+             <label for="sayi2">Sayı 2:</label>
+             <input type="text" class="form-control" id="sayi2" placeholder="Bir Sayı Girin">
+         </div>
+         <button type="button" id="hesapla" class="btn btn-primary">Hesapla</button>      
+     </form><br>
+     <div class="alert alert-success" id="sonuc">       
+     </div>  
+</div>
+
+<script>
+    var hesapla = document.querySelector("#hesapla");
+    var s1 = document.querySelector("#sayi1");
+    var s2 = document.querySelector("#sayi2");
+    var sonuc = document.querySelector("#sonuc");
+
+    hesapla.onclick = function() {
+        var hipotenüs = Math.sqrt(s1.value * s1.value +
+        s2.value*s2.value )
+        
+        sonuc.textContent = "hipotenüs değeri =  " +  hipotenüs ; 
+    }
+
+</script>
+
+</body>
+</html>

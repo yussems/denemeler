@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Elamanları</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <form>
+        <div class="form-row">
+            <label for="adı">Adı</label>
+            <input type="text" name="product" id="adı" placeholder="Adınız" required>
+        </div>
+        <div class="form-row">
+            <label for="soyadı">Soyadı</label>
+            <input type="text" name="" id="soyadı" placeholder="Soyadınız" required>
+        </div>
+
+        <div class="form-row">
+            <label for="telefon">Telefon</label>
+            <input type="tel" name="" id="telefon" placeholder="555 *** ** **" required>
+        </div>
+
+        <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" name="" id="email" placeholder="try@gmail.com" required> 
+        </div>
+        <div>
+            <label for="mesaj">Mesaj</label>
+            <textarea name="mesaj" id="mesaj" cols="50" rows="10"></textarea>
+        </div>
+        
+        <div class="form-row">
+            <label for="sehir">Şehir</label>
+            <select name="sehir" id="sehir">
+                <option value="">Canada</option>
+                <option value="">Türkiye</option>
+            </select>
+        </div>
+
+        <div  class="form-row">
+            <p>Sevdiğiniz Renk</p>
+            <div class="radio-container">
+                <label for="mor"><input type="radio" name="renk" id="mor" value="mor" checked> Mor</label>
+                <label for="turuncu"><input type="radio" name="renk" id="turuncu" value="turuncu"> Turuncu</label>
+                <label for="kırmızı"><input type="radio" name="renk" id="kırmızı" value="kırmızı"> Kırmızı</label>
+            </div>
+        </div>
+        
+        <div class="form-row">
+            <button  type="reset">Sıfırla</button>
+            <button class="primary" type="submit">Gönder</button>
+        </div>
+        
+    </form>
+    
+</body>
+</html>
